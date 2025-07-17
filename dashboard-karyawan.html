@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Karyawan</title>
+    <link rel="stylesheet" href="css/styles-dashboard-karyawan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2"></script>
+    <script defer src="js/scripts-dashboard-karyawan.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button id="toggle-sidebar" class="toggle-button"><i class="fa-solid fa-grip"></i></button>
+                <h2 class="sidebar-title">ICT Unmul</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="profile.html">
+                            <span class="icon"><i class="fa-solid fa-user"></i></span>
+                            <span class="text">Profil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="kehadiran.html">
+                            <span class="icon"><i class="fa-solid fa-check"></i></span>
+                            <span class="text">Kehadiran</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cuti.html">
+                            <span class="icon"><i class="fa-solid fa-plane-departure"></i></span>
+                            <span class="text">Pengajuan Cuti</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="laporan.html">
+                            <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+                            <span class="text">Laporan Kehadiran</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="logout.html" class="logout-link">
+                    <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                    <span class="text">Logout</span>
+                </a>
+                <div class="user-info">
+                    <i class="fa-solid fa-user-circle"></i>
+                    <span class="user-name">Karyawan</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <h1>Selamat Datang, <span>User</span></h1>
+                <div class="clock">
+                    <i class="fa-solid fa-clock"></i>
+                    <span id="real-time-clock">00:00:00</span>
+                </div>
+            </div>
+            <div class="shortcut-cards">
+                <button id="check-in-btn" class="btn check-in">Check In</button>
+                <button id="check-out-btn" class="btn check-out">Check Out</button>
+            </div>
+            <div class="shortcut-cards">
+                <a href="kehadiran.html" class="card">
+                    <h3>Kehadiran</h3>
+                    <p>Status: <span>Hadir</span></p>
+                </a>
+                <a href="cuti.html" class="card">
+                    <h3>Cuti</h3>
+                    <p>Cuti Tersisa: <span>10 Hari</span></p>
+                </a>
+                <a href="laporan.html" class="card">
+                    <h3>Laporan</h3>
+                    <p>Lihat Rekap Kehadiran</p>
+                </a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

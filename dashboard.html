@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script defer src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button id="toggle-sidebar" class="toggle-button"><i class="fa-solid fa-grip"></i></button>
+                <h2 class="sidebar-title">Dasboard Admin</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="data-karyawan.html">
+                            <span class="icon"><i class="fa-solid fa-user"></i></span>
+                            <span class="text">Data Karyawan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-departemen.html">
+                            <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                            <span class="text">Data Departemen</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-kehadiran.html">
+                            <span class="icon"><i class="fa-solid fa-check"></i></span>
+                            <span class="text">Daftar Kehadiran</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-cuti.html">
+                            <span class="icon"><i class="fa-solid fa-square-xmark"></i></span>
+                            <span class="text">Daftar Cuti</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="laporan-analisis.html">
+                            <span class="icon"><i class="fa-solid fa-sheet-plastic"></i></span>
+                            <span class="text">Laporan dan Analisis</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <i class="fa-solid fa-user-circle"></i>
+                    <span class="user-name">Admin</span>
+                </div>
+            </div>
+        </aside>
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="shortcut-cards">
+                <a href="data-karyawan.html" class="card">
+                    <h3>Data Karyawan</h3>
+                    <p>Total Karyawan: <span>100</span></p>
+                </a>
+                <a href="data-departemen.html" class="card">
+                    <h3>Data Departemen</h3>
+                    <p>Jumlah Departemen: <span>10</span></p>
+                </a>
+                <a href="data-kehadiran.html" class="card">
+                    <h3>Daftar Kehadiran</h3>
+                    <p>Karyawan Hadir: <span>90</span></p>
+                </a>
+                <a href="data-cuti.html" class="card">
+                    <h3>Daftar Cuti</h3>
+                    <p>Karyawan Cuti: <span>5</span></p>
+                </a>
+                <a href="laporan-analisis.html" class="card">
+                    <h3>Laporan dan Analisis</h3>
+                    <p>Detail Analisis Tersedia</p>
+                </a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

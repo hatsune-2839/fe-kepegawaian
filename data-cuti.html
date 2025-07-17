@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Cuti</title>
+    <link rel="stylesheet" href="css/styles-cuti.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script defer src="js/scripts-cuti.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button id="toggle-sidebar" class="toggle-button"><i class="fa-solid fa-grip"></i></button>
+                <h2 class="sidebar-title">Dasboard Admin</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="data-karyawan.html">
+                            <span class="icon"><i class="fa-solid fa-user"></i></span>
+                            <span class="text">Data Karyawan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-departemen.html">
+                            <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                            <span class="text">Data Departemen</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-kehadiran.html">
+                            <span class="icon"><i class="fa-solid fa-check"></i></span>
+                            <span class="text">Daftar Kehadiran</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-cuti.html">
+                            <span class="icon"><i class="fa-solid fa-square-xmark"></i></span>
+                            <span class="text">Daftar Cuti</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="laporan-analisis.html">
+                            <span class="icon"><i class="fa-solid fa-sheet-plastic"></i></span>
+                            <span class="text">Laporan dan Analisis</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="dashboard.html" class="home-link">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="text">Home</span>
+                </a>
+                <div class="user-info">
+                    <i class="fa-solid fa-user-circle"></i>
+                    <span class="user-name">Admin</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="page-header">
+                <h1>Daftar Cuti</h1>
+                <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Tambah Pengajuan</button>
+            </header>
+
+            <section class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nama Pengaju</th>
+                            <th>Tanggal Mulai</th>
+                            <th>Tanggal Selesai</th>
+                            <th>Alasan Cuti</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Jane Doe</td>
+                            <td>2023-12-20</td>
+                            <td>2023-12-25</td>
+                            <td>Cuti Tahunan</td>
+                            <td>Disetujui</td>
+                            <td>
+                                <button class="btn btn-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-trash"></i> Hapus</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John Smith</td>
+                            <td>2023-12-26</td>
+                            <td>2023-12-28</td>
+                            <td>Cuti Sakit</td>
+                            <td>Menunggu</td>
+                            <td>
+                                <button class="btn btn-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-trash"></i> Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

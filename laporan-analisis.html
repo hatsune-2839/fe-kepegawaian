@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan dan Analisis</title>
+    <link rel="stylesheet" href="css/styles-laporan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script defer src="js/scripts-laporan.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button id="toggle-sidebar" class="toggle-button"><i class="fa-solid fa-grip"></i></button>
+                <h2 class="sidebar-title">Dasboard Admin</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="data-karyawan.html">
+                            <span class="icon"><i class="fa-solid fa-user"></i></span>
+                            <span class="text">Data Karyawan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-departemen.html">
+                            <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                            <span class="text">Data Departemen</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-kehadiran.html">
+                            <span class="icon"><i class="fa-solid fa-check"></i></span>
+                            <span class="text">Daftar Kehadiran</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-cuti.html">
+                            <span class="icon"><i class="fa-solid fa-square-xmark"></i></span>
+                            <span class="text">Daftar Cuti</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="laporan-analisis.html">
+                            <span class="icon"><i class="fa-solid fa-sheet-plastic"></i></span>
+                            <span class="text">Laporan dan Analisis</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="dashboard.html" class="home-link">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="text">Home</span>
+                </a>
+                <div class="user-info">
+                    <i class="fa-solid fa-user-circle"></i>
+                    <span class="user-name">Admin</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="page-header">
+                <h1>Laporan dan Analisis</h1>
+            </header>
+
+            <section class="reports">
+                <!-- Rekapitulasi Harian -->
+                <div class="report-card">
+                    <h2>Rekapitulasi Harian</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nama Karyawan</th>
+                                <th>Kehadiran</th>
+                                <th>Cuti</th>
+                                <th>Lembur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jane Doe</td>
+                                <td>Hadir</td>
+                                <td>-</td>
+                                <td>2 Jam</td>
+                            </tr>
+                            <tr>
+                                <td>John Smith</td>
+                                <td>Hadir</td>
+                                <td>-</td>
+                                <td>3 Jam</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Rekapitulasi Mingguan -->
+                <div class="report-card">
+                    <h2>Rekapitulasi Mingguan</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nama Karyawan</th>
+                                <th>Hadir</th>
+                                <th>Cuti</th>
+                                <th>Lembur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jane Doe</td>
+                                <td>5 Hari</td>
+                                <td>1 Hari</td>
+                                <td>10 Jam</td>
+                            </tr>
+                            <tr>
+                                <td>John Smith</td>
+                                <td>4 Hari</td>
+                                <td>1 Hari</td>
+                                <td>15 Jam</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Rekapitulasi Bulanan -->
+                <div class="report-card">
+                    <h2>Rekapitulasi Bulanan</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nama Karyawan</th>
+                                <th>Hadir</th>
+                                <th>Cuti</th>
+                                <th>Lembur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jane Doe</td>
+                                <td>20 Hari</td>
+                                <td>2 Hari</td>
+                                <td>30 Jam</td>
+                            </tr>
+                            <tr>
+                                <td>John Smith</td>
+                                <td>18 Hari</td>
+                                <td>2 Hari</td>
+                                <td>25 Jam</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
