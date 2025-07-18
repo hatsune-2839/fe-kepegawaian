@@ -1,8 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const sidebar = document.querySelector(".sidebar");
-    const toggleButton = document.getElementById("toggle-sidebar");
-
-    toggleButton.addEventListener("click", () => {
-        sidebar.classList.toggle("collapsed");
+$(document).ready(function () {
+    $("#toggle-sidebar").click(function () {
+        $(".sidebar").toggleClass("collapsed");
     });
 });
